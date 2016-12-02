@@ -1,0 +1,280 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sma-j
+LIBS:mini-whip-power-feed-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Mini-whip power feed"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 5757E0C6
+P 4000 4450
+F 0 "#PWR01" H 4000 4200 50  0001 C CNN
+F 1 "GND" H 4005 4277 50  0000 C CNN
+F 2 "" H 4000 4450 50  0000 C CNN
+F 3 "" H 4000 4450 50  0000 C CNN
+	1    4000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5757E0D8
+P 4925 4450
+F 0 "#PWR02" H 4925 4200 50  0001 C CNN
+F 1 "GND" H 4930 4277 50  0000 C CNN
+F 2 "" H 4925 4450 50  0000 C CNN
+F 3 "" H 4925 4450 50  0000 C CNN
+	1    4925 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5757E0E3
+P 5400 4450
+F 0 "#PWR03" H 5400 4200 50  0001 C CNN
+F 1 "GND" H 5405 4277 50  0000 C CNN
+F 2 "" H 5400 4450 50  0000 C CNN
+F 3 "" H 5400 4450 50  0000 C CNN
+	1    5400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R101
+U 1 1 5757E2F5
+P 4925 4225
+F 0 "R101" H 4995 4271 50  0000 L CNN
+F 1 "1k" H 4995 4180 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4855 4225 50  0001 C CNN
+F 3 "" H 4925 4225 50  0000 C CNN
+	1    4925 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C102
+U 1 1 5757E4DC
+P 4475 3950
+F 0 "C102" V 4300 3950 50  0000 C CNN
+F 1 "1u" V 4636 3950 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4513 3800 50  0001 C CNN
+F 3 "" H 4475 3950 50  0000 C CNN
+	1    4475 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L INDUCTOR L101
+U 1 1 5757E7AA
+P 4000 3300
+F 0 "L101" H 3959 3254 50  0000 R CNN
+F 1 "470u" H 3959 3345 50  0000 R CNN
+F 2 "Choke_Axial_ThroughHole:Choke_Horizontal_RM15mm" H 4000 3300 50  0001 C CNN
+F 3 "" H 4000 3300 50  0000 C CNN
+	1    4000 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C101
+U 1 1 5757E90D
+P 4475 3125
+F 0 "C101" H 4300 3125 50  0000 C CNN
+F 1 "1u" H 4300 3225 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4513 2975 50  0001 C CNN
+F 3 "" H 4475 3125 50  0000 C CNN
+	1    4475 3125
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5757EAD6
+P 4475 3400
+F 0 "#PWR04" H 4475 3150 50  0001 C CNN
+F 1 "GND" H 4480 3227 50  0000 C CNN
+F 2 "" H 4475 3400 50  0000 C CNN
+F 3 "" H 4475 3400 50  0000 C CNN
+	1    4475 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L F_Small F101
+U 1 1 5757ECE2
+P 4875 2850
+F 0 "F101" H 4875 2950 50  0000 C CNN
+F 1 "PTS120660V010" H 4875 2725 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_Wave" H 4875 2850 50  0001 C CNN
+F 3 "" H 4875 2850 50  0000 C CNN
+	1    4875 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D101
+U 1 1 5757EEDB
+P 5425 2850
+F 0 "D101" H 5425 2950 50  0000 C CNN
+F 1 "FM5817" H 5425 2725 50  0000 C CNN
+F 2 "Diodes_SMD:DO-214BA" H 5425 2850 50  0001 C CNN
+F 3 "" H 5425 2850 50  0000 C CNN
+	1    5425 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C103
+U 1 1 5757F039
+P 5775 3125
+F 0 "C103" H 5600 3125 50  0000 C CNN
+F 1 "100n" H 5600 3225 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5813 2975 50  0001 C CNN
+F 3 "" H 5775 3125 50  0000 C CNN
+	1    5775 3125
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5757F19F
+P 5775 3400
+F 0 "#PWR05" H 5775 3150 50  0001 C CNN
+F 1 "GND" H 5780 3227 50  0000 C CNN
+F 2 "" H 5775 3400 50  0000 C CNN
+F 3 "" H 5775 3400 50  0000 C CNN
+	1    5775 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L BARREL_JACK CON101
+U 1 1 5757F950
+P 6850 2950
+F 0 "CON101" H 6832 3275 50  0000 C CNN
+F 1 "BARREL_JACK" H 6832 3184 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 6850 2950 50  0001 C CNN
+F 3 "" H 6850 2950 50  0000 C CNN
+	1    6850 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5757FB9D
+P 6375 3400
+F 0 "#PWR06" H 6375 3150 50  0001 C CNN
+F 1 "GND" H 6380 3227 50  0000 C CNN
+F 2 "" H 6375 3400 50  0000 C CNN
+F 3 "" H 6375 3400 50  0000 C CNN
+	1    6375 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SMA-J P2
+U 1 1 57585B69
+P 6050 4000
+F 0 "P2" H 5875 4175 60  0000 L CNN
+F 1 "SMA-J" H 5875 3875 60  0000 L CNN
+F 2 "sma-j:SMA-J" H 6050 4000 60  0001 C CNN
+F 3 "" H 6050 4000 60  0000 C CNN
+	1    6050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SMA-J P1
+U 1 1 57585E87
+P 3425 4000
+F 0 "P1" H 3250 4175 60  0000 L CNN
+F 1 "SMA-J" H 3250 3875 60  0000 L CNN
+F 2 "sma-j:SMA-J" H 3425 4000 60  0001 C CNN
+F 3 "" H 3425 4000 60  0000 C CNN
+	1    3425 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 5758712E
+P 4000 2525
+F 0 "#FLG07" H 4000 2620 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 2705 50  0000 C CNN
+F 2 "" H 4000 2525 50  0000 C CNN
+F 3 "" H 4000 2525 50  0000 C CNN
+	1    4000 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 3950 5700 3950
+Wire Wire Line
+	4925 3950 4925 4075
+Wire Wire Line
+	4925 4450 4925 4375
+Connection ~ 4925 3950
+Wire Wire Line
+	4000 3600 4000 3950
+Wire Wire Line
+	4000 2525 4000 3000
+Wire Wire Line
+	4000 2850 4775 2850
+Wire Wire Line
+	4475 2850 4475 2975
+Wire Wire Line
+	4475 3400 4475 3275
+Connection ~ 4475 2850
+Wire Wire Line
+	4975 2850 5275 2850
+Wire Wire Line
+	5775 3400 5775 3275
+Wire Wire Line
+	5575 2850 6550 2850
+Wire Wire Line
+	5775 2850 5775 2975
+Connection ~ 5775 2850
+Wire Wire Line
+	6550 2950 6375 2950
+Wire Wire Line
+	6375 2950 6375 3400
+Wire Wire Line
+	6550 3050 6375 3050
+Connection ~ 6375 3050
+Wire Wire Line
+	3775 3950 4325 3950
+Connection ~ 4000 3950
+Wire Wire Line
+	3775 4050 4000 4050
+Wire Wire Line
+	4000 4050 4000 4450
+Wire Wire Line
+	5400 4050 5700 4050
+Connection ~ 4000 2850
+Wire Wire Line
+	5400 4050 5400 4450
+$EndSCHEMATC
