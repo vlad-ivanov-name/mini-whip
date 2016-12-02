@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# SMA-J
+#
+DEF SMA-J P 0 40 N N 1 F N
+F0 "P" -175 175 60 H V L CNN
+F1 "SMA-J" -175 -125 60 H V L CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C -50 50 11 0 1 0 N
+C -50 50 71 0 1 0 N
+P 2 0 1 0  -150 50  -50 50 N
+P 3 0 1 0  -150 -50  -50 -50  -50 -25 N
+X WIRE 1 -350 50 200 R 50 50 1 1 B
+X GROUND 2 -350 -50 200 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library

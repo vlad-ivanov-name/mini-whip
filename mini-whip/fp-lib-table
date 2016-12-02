@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name miniwhip)(type KiCad)(uri "$(KIPRJMOD)/fp/miniwhip.pretty")(options "")(descr ""))
+  (lib (name sma-j)(type KiCad)(uri "$(KIPRJMOD)/fp/sma-j.pretty")(options "")(descr ""))
+  (lib (name m246)(type KiCad)(uri "$(KIPRJMOD)/fp/m246.pretty")(options "")(descr ""))
+)

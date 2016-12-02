@@ -1,0 +1,331 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:lib/miniwhip
+LIBS:lib/sma-j
+LIBS:lib/mini-whip-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Mini-whip"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R1
+U 1 1 574C8FE8
+P 3800 3100
+F 0 "R1" V 3900 3100 50  0000 C CNN
+F 1 "1M" V 3700 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3730 3100 50  0001 C CNN
+F 3 "" H 3800 3100 50  0000 C CNN
+	1    3800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 574C9049
+P 5150 3200
+F 0 "R5" V 5250 3200 50  0000 C CNN
+F 1 "2k2" V 5050 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 3200 50  0001 C CNN
+F 3 "" H 5150 3200 50  0000 C CNN
+	1    5150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 574C9098
+P 4150 3700
+F 0 "R2" V 4250 3700 50  0000 C CNN
+F 1 "1M" V 4050 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4080 3700 50  0001 C CNN
+F 3 "" H 4150 3700 50  0000 C CNN
+	1    4150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 574C910F
+P 4150 4300
+F 0 "R3" V 4250 4300 50  0000 C CNN
+F 1 "1M" V 4050 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4080 4300 50  0001 C CNN
+F 3 "" H 4150 4300 50  0000 C CNN
+	1    4150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 574C931F
+P 5500 3650
+F 0 "R7" V 5600 3650 50  0000 C CNN
+F 1 "47" V 5400 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5430 3650 50  0001 C CNN
+F 3 "" H 5500 3650 50  0000 C CNN
+	1    5500 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 574C93B4
+P 5150 4300
+F 0 "R6" V 5250 4300 50  0000 C CNN
+F 1 "10k" V 5050 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 4300 50  0001 C CNN
+F 3 "" H 5150 4300 50  0000 C CNN
+	1    5150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 574C9428
+P 6050 4300
+F 0 "R8" V 6150 4300 50  0000 C CNN
+F 1 "220" V 5950 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5980 4300 50  0001 C CNN
+F 3 "" H 6050 4300 50  0000 C CNN
+	1    6050 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3850 6050 4150
+Wire Wire Line
+	5650 3650 5750 3650
+Wire Wire Line
+	5350 3650 5150 3650
+Wire Wire Line
+	5150 3350 5150 4150
+Connection ~ 5150 3650
+Wire Wire Line
+	6050 2850 6050 3450
+Wire Wire Line
+	3800 2850 7200 2850
+Wire Wire Line
+	5150 2850 5150 3050
+$Comp
+L Q_NJFET_DSG Q1
+U 1 1 574CA696
+P 4400 3450
+F 0 "Q1" H 4700 3500 50  0000 R CNN
+F 1 "MMBFJ310" H 5000 3400 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 4600 3550 50  0001 C CNN
+F 3 "" H 4400 3450 50  0000 C CNN
+	1    4400 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3450 4150 3550
+Wire Wire Line
+	4150 3850 4150 4150
+Wire Wire Line
+	4150 3950 3800 3950
+Wire Wire Line
+	3800 3950 3800 3250
+Connection ~ 4150 3950
+Wire Wire Line
+	3800 2950 3800 2850
+Connection ~ 5150 2850
+Wire Wire Line
+	4500 3250 4500 2850
+Connection ~ 4500 2850
+Wire Wire Line
+	3450 3450 4200 3450
+$Comp
+L R R4
+U 1 1 574CBCF4
+P 4500 4300
+F 0 "R4" V 4600 4300 50  0000 C CNN
+F 1 "680" V 4400 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4430 4300 50  0001 C CNN
+F 3 "" H 4500 4300 50  0000 C CNN
+	1    4500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3650 4500 4150
+$Comp
+L Earth #PWR01
+U 1 1 574CBFBA
+P 4150 4700
+F 0 "#PWR01" H 4150 4450 50  0001 C CNN
+F 1 "Earth" H 4150 4550 50  0001 C CNN
+F 2 "" H 4150 4700 50  0000 C CNN
+F 3 "" H 4150 4700 50  0000 C CNN
+	1    4150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4450 4150 4700
+Wire Wire Line
+	4150 4600 6050 4600
+Wire Wire Line
+	4500 4600 4500 4450
+Connection ~ 4150 4600
+Wire Wire Line
+	5150 4600 5150 4450
+Connection ~ 4500 4600
+Wire Wire Line
+	6050 4600 6050 4450
+Connection ~ 5150 4600
+$Comp
+L C C1
+U 1 1 574CC897
+P 4850 3950
+F 0 "C1" H 4875 4050 50  0000 L CNN
+F 1 "560n" H 4875 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4888 3800 50  0001 C CNN
+F 3 "" H 4850 3950 50  0000 C CNN
+	1    4850 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3950 5150 3950
+Connection ~ 5150 3950
+Wire Wire Line
+	4700 3950 4500 3950
+Connection ~ 4500 3950
+$Comp
+L C C3
+U 1 1 574CE0E6
+P 6700 4000
+F 0 "C3" H 6725 4100 50  0000 L CNN
+F 1 "560n" H 6725 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6738 3850 50  0001 C CNN
+F 3 "" H 6700 4000 50  0000 C CNN
+	1    6700 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 4000 6050 4000
+Connection ~ 6050 4000
+$Comp
+L C C2
+U 1 1 574CE5AB
+P 6700 3100
+F 0 "C2" H 6725 3200 50  0000 L CNN
+F 1 "560n" H 6725 3000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6738 2950 50  0001 C CNN
+F 3 "" H 6700 3100 50  0000 C CNN
+	1    6700 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 2850 6700 2950
+Connection ~ 6050 2850
+$Comp
+L Earth #PWR02
+U 1 1 574CE8DB
+P 6700 3400
+F 0 "#PWR02" H 6700 3150 50  0001 C CNN
+F 1 "Earth" H 6700 3250 50  0001 C CNN
+F 2 "" H 6700 3400 50  0000 C CNN
+F 3 "" H 6700 3400 50  0000 C CNN
+	1    6700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3250 6700 3400
+$Comp
+L INDUCTOR L1
+U 1 1 574CEAAD
+P 7200 3300
+F 0 "L1" V 7150 3300 50  0000 C CNN
+F 1 "470 uH" V 7300 3300 50  0000 C CNN
+F 2 "Choke_Axial_ThroughHole:Choke_Horizontal_RM15mm" H 7200 3300 50  0001 C CNN
+F 3 "" H 7200 3300 50  0000 C CNN
+	1    7200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2850 7200 3000
+Connection ~ 6700 2850
+Wire Wire Line
+	6850 4000 7750 4000
+Wire Wire Line
+	7200 4000 7200 3600
+Connection ~ 4150 3450
+$Comp
+L SMA-J P1
+U 1 1 574D1705
+P 8100 4050
+F 0 "P1" H 7925 4225 60  0000 L CNN
+F 1 "SMA-J" H 7925 3925 60  0000 L CNN
+F 2 "sma-j:SMA-J" H 8100 4050 60  0001 C CNN
+F 3 "" H 8100 4050 60  0000 C CNN
+	1    8100 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 7200 4000
+$Comp
+L Earth #PWR03
+U 1 1 574D1E8E
+P 7600 4700
+F 0 "#PWR03" H 7600 4450 50  0001 C CNN
+F 1 "Earth" H 7600 4550 50  0001 C CNN
+F 2 "" H 7600 4700 50  0000 C CNN
+F 3 "" H 7600 4700 50  0000 C CNN
+	1    7600 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4100 7600 4100
+Wire Wire Line
+	7600 4100 7600 4700
+$Comp
+L Q_NPN_EBC Q2
+U 1 1 574DB823
+P 5950 3650
+F 0 "Q2" H 6250 3700 50  0000 R CNN
+F 1 "2N5109" H 6450 3600 50  0000 R CNN
+F 2 "m246:M246" H 6150 3750 50  0001 C CNN
+F 3 "" H 5950 3650 50  0000 C CNN
+	1    5950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MINIWHIP W1
+U 1 1 574CB3F2
+P 3250 3450
+F 0 "W1" H 3075 3375 60  0000 L CNN
+F 1 "MINIWHIP" H 3075 3275 60  0000 L CNN
+F 2 "miniwhip:MINIWHIP" H 3250 3450 60  0001 C CNN
+F 3 "" H 3250 3450 60  0000 C CNN
+	1    3250 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
